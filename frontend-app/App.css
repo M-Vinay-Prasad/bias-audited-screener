@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #F7F6F3;
+  color: #2C2C2A;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: #1F4E79;
+}
+
+.app-subtitle {
+  font-size: 15px;
+  color: #5F5E5A;
+  margin: 0;
+}
+
+.input-section {
+  background: #FFFFFF;
+  border: 1px solid #E3E1D9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444441;
+  margin: 1rem 0 6px;
+}
+
+.field-label:first-child {
+  margin-top: 0;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #D3D1C7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input[type="file"] {
+  font-size: 13px;
+}
+
+.file-count {
+  font-size: 12px;
+  color: #888780;
+  margin: 6px 0 0;
+}
+
+.primary-btn {
+  margin-top: 1.25rem;
+  background: #1F4E79;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-text {
+  color: #A32D2D;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.results-section {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1.5rem;
+}
+
+.results-section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #2C2C2A;
+}
+
+.candidate-card {
+  background: #FFFFFF;
+  border: 1px solid #E3E1D9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.candidate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.candidate-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.candidate-id {
+  font-size: 12px;
+  color: #888780;
+  margin: 2px 0 0;
+}
+
+.candidate-score {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 140px;
+}
+
+.score-number {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 28px;
+  text-align: right;
+}
+
+.score-bar-track {
+  flex: 1;
+  height: 6px;
+  background: #EEEDE6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.candidate-detail {
+  padding: 0 16px 16px;
+  border-top: 1px solid #EEEDE6;
+}
+
+.detail-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #888780;
+  margin: 14px 0 6px;
+}
+
+.detail-label.matched {
+  color: #0F6E56;
+}
+
+.detail-label.missing {
+  color: #993C1D;
+}
+
+.detail-reasoning {
+  font-size: 13px;
+  color: #444441;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.req-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.req-columns ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+}
+
+.fairness-panel {
+  background: #FFFFFF;
+  border: 1px solid #E3E1D9;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.fairness-panel.flagged {
+  border-color: #F09595;
+  background: #FCEBEB;
+}
+
+.fairness-panel.clear {
+  border-color: #C0DD97;
+  background: #EAF3DE;
+}
+
+.fairness-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.fairness-panel.flagged .fairness-title {
+  color: #791F1F;
+}
+
+.fairness-panel.clear .fairness-title {
+  color: #27500A;
+}
+
+.fairness-summary {
+  font-size: 13px;
+  color: #444441;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.fairness-table {
+  width: 100%;
+  font-size: 12px;
+  border-collapse: collapse;
+}
+
+.fairness-table th {
+  text-align: left;
+  font-weight: 600;
+  color: #888780;
+  padding: 6px 4px;
+  border-bottom: 1px solid #D3D1C7;
+}
+
+.fairness-table td {
+  padding: 6px 4px;
+  border-bottom: 1px solid #EEEDE6;
+}
+
+.row-flagged {
+  background: rgba(217, 83, 79, 0.08);
+}
+
+@media (max-width: 720px) {
+  .results-section {
+    grid-template-columns: 1fr;
+  }
+}
