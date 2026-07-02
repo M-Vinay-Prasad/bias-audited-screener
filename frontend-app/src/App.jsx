@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://bias-audited-screener-api.onrender.com";
 
 function ScoreBar({ score }) {
   const color = score >= 70 ? "#1D9E75" : score >= 50 ? "#BA7517" : "#A32D2D";
