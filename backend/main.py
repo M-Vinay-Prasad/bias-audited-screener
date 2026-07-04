@@ -27,6 +27,8 @@ app.add_middleware(
         "http://localhost:5173",
         "http://127.0.0.1:5173",
         "https://creative-bavarois-412d24.netlify.app",
+        "https://mvp-fairscreen.netlify.app",
+],
     ],
     allow_methods=["*"],
     allow_headers=["*"],
